@@ -14,13 +14,13 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
-    new ExtractTextPlugin('styles.css')/*,
+    new ExtractTextPlugin('styles.css'),
     new webpack.optimize.UglifyJsPlugin({
       compress:{
         drop_console:true,
         unsafe:true
       }
-    })*/
+    })
   ],
   module: {
     loaders: [
