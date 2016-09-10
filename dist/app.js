@@ -14209,7 +14209,7 @@ var app =
 	            ' ',
 	            _react2.default.createElement(
 	              'a',
-	              { href: 'mailto:vlad@htmlbook.ru', className: 'contact' },
+	              { href: 'mailto:alexxxdev@ya.ru', className: 'contact' },
 	              'alexxxdev@ya.ru'
 	            )
 	          ),

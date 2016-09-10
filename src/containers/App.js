@@ -27,7 +27,7 @@ export default class App extends Component {
         </div>
         <div className="row app-row" style={{marginTop:"80px"}}>
           <p className="contact">Contacts:</p>
-          <p className="contact"><span className="font-icon-social-email"/> <a href="mailto:vlad@htmlbook.ru" className="contact">alexxxdev@ya.ru</a></p>
+          <p className="contact"><span className="font-icon-social-email"/> <a href="mailto:alexxxdev@ya.ru" className="contact">alexxxdev@ya.ru</a></p>
           <p className="contact"><span className="icon-social-telegram"/> <a href="https://telegram.me/alexxxdev" className="contact">alexxxdev</a></p>
           <p className="contact"><span className="font-icon-social-skype"/> <a href="skype:alexxxdev" className="contact">alexxxdev</a></p>
           <p className="contact"><span className="font-icon-social-linkedin"/> <a href="https://www.linkedin.com/in/alexxxdev" className="contact">alexxxdev</a></p>
