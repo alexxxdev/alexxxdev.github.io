@@ -350,6 +350,13 @@ var libs = [
           license_url: "https://www.apache.org/licenses/LICENSE-2.0",
           bintray_latest_version: "https://bintray.com/bintray/jcenter/org.androidannotations:androidannotations/_latestVersion",
           bintray_img_version: "https://api.bintray.com/packages/bintray/jcenter/org.androidannotations:androidannotations/images/download.svg"
+        },
+        {
+          name: "Tiger",
+          github: "https://github.com/google/tiger",
+          desc: "Tiger - The fastest java dependency injection framework",
+          license: "Apache License V2",
+          license_url: "https://www.apache.org/licenses/LICENSE-2.0"
         }
       ]
     },
