@@ -11,7 +11,7 @@ export default class Lib extends Component {
         <div key={index} className={index % 2 == 0 ? "lib_item1" : "lib_item2"}>
           <p className="lib_name">
             {item.url ?
-              <a className="lib_url" href={item.url} target="_blank">{item.name}<span className="font-icon-link"/></a>:<span className="lib_url">{item.name}</span>}
+              <a className="lib_url" href={item.url} target="_blank">{item.name}<span className="font-icon-link"/></a> : <span className="lib_url">{item.name}</span>}
           </p>
           <div className="lib_table">
             <div className="lib_row1">
@@ -26,7 +26,7 @@ export default class Lib extends Component {
           </div>
           {item.gradle &&
           <div className="lib_table">
-            <div className="lib_row_gradle1">Gradle:</div>
+            <div className="lib_row_gradle1">Gradle:&nbsp;</div>
             <div className="lib_row_gradle2">
               <pre className="lib_pre"><code className="lib_gradle">{item.gradle}</code></pre>
             </div>
@@ -46,17 +46,42 @@ export default class Lib extends Component {
               </p>}
             </div>
           </div>
-          {item.bintray &&
-            <div className="lib_table">
-              {item.bintray.map(function (item, index) {
-                return(
-                <p className="lib_bintray_latest_version">{item.name}:
-                  <a href={item.bintray_latest_version} target="_blank">
-                    <img src={item.bintray_img_version} alt="Download"/>
-                  </a>
-                </p>
+          {item.list &&
+          <div style={{marginTop: "25px"}}>{
+            item.list.map(function (item, index) {
+              return (
+                <div className="lib_table">
+                  <div className="lib_row_gradle3">{item.name}:&nbsp;</div>
+                  {item.gradle &&
+                  <div className="lib_row_gradle4">
+                    <pre className="lib_pre"><code className="lib_gradle">{item.gradle}</code></pre>
+                  </div>
+                  }
+                </div>
+              )
+            })
+          }</div>
+          }
+          {item.list2 &&
+            <div>{
+              item.list2.map(function (item, index) {
+                return (
+                  <div>
+                  <div className="lib_table">
+                    <div className="lib_row_gradle5">{item.name}:&nbsp;</div>
+                    {item.gradle &&
+                    <div className="lib_row_gradle6">
+                      <pre className="lib_pre"><code className="lib_gradle">{item.gradle}</code></pre>
+                    </div>
+                    }
+                  </div>
+                  {item.desc &&
+                    <div className="lib_table" style={{marginBottom:"15px"}}>{item.desc}</div>
+                  }
+                  </div>
                 )
-              })}
+              })
+            }
             </div>
           }
         </div>
@@ -64,7 +89,7 @@ export default class Lib extends Component {
     })
 
     return (
-      <div id={area + "Area"} className={area == 0 ? "accordion-body collapse lib in" : "accordion-body collapse lib in"}>
+      <div id={area + "Area"} className={area == 0 ? "accordion-body collapse lib" : "accordion-body collapse lib"}>
         <div className="accordion-inner lib">
           {libTemplate}
         </div>
