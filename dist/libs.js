@@ -458,6 +458,239 @@ var libs = [
           bintray_img_version: "https://api.bintray.com/packages/bintray/jcenter/net.danlew:android.joda/images/download.svg"
         }
       ]
+    },
+    {
+      name: "Google Play Services",
+      list:[
+        {
+          usage: "https://developers.google.com/android/guides/setup",
+          gradle:"apply plugin: 'com.android.application'\n\t...\n\n\tdependencies {\n\t\tcompile 'com.google.android.gms:play-services:9.4.0'\n\t}\n\n",
+          list:[
+            {
+              name:"Google+",
+              gradle:"com.google.android.gms:play-services-plus:9.4.0"
+            },
+            {
+              name:"Google Account Login",
+              gradle:"com.google.android.gms:play-services-auth:9.4.0"
+            },
+            {
+              name:"Google Actions, Base Client Library",
+              gradle:"com.google.android.gms:play-services-base:9.4.0"
+            },
+            {
+              name:"Google Address API",
+              gradle:"com.google.android.gms:play-services-identity:9.4.0"
+            },
+            {
+              name:"Google App Indexing",
+              gradle:"com.google.android.gms:play-services-appindexing:9.4.0"
+            },
+            {
+              name:"Google App Invites",
+              gradle:"com.google.android.gms:play-services-appinvite:9.4.0"
+            },
+            {
+              name:"Google Analytics",
+              gradle:"com.google.android.gms:play-services-analytics:9.4.0"
+            },
+            {
+              name:"Google Awareness",
+              gradle:"com.google.android.gms:play-services-contextmanager:9.4.0"
+            },
+            {
+              name:"Google Cast",
+              gradle:"com.google.android.gms:play-services-cast:9.4.0"
+            },
+            {
+              name:"Google Cloud Messaging",
+              gradle:"com.google.android.gms:play-services-gcm:9.4.0"
+            },
+            {
+              name:"Google Drive",
+              gradle:"com.google.android.gms:play-services-drive:9.4.0"
+            },
+            {
+              name:"Google Fit",
+              gradle:"com.google.android.gms:play-services-fitness:9.4.0"
+            },
+            {
+              name:"Google Location and Activity Recognition",
+              gradle:"com.google.android.gms:play-services-location:9.4.0"
+            },
+            {
+              name:"Google Maps",
+              gradle:"com.google.android.gms:play-services-maps:9.4.0"
+            },
+            {
+              name:"Google Mobile Ads",
+              gradle:"com.google.android.gms:play-services-ads:9.4.0"
+            },
+            {
+              name:"Google Places",
+              gradle:"com.google.android.gms:play-services-places:9.4.0"
+            },
+            {
+              name:"Mobile Vision",
+              gradle:"com.google.android.gms:play-services-vision:9.4.0"
+            },
+            {
+              name:"Google Nearby",
+              gradle:"com.google.android.gms:play-services-nearby:9.4.0"
+            },
+            {
+              name:"Google Panorama Viewer",
+              gradle:"com.google.android.gms:play-services-panorama:9.4.0"
+            },
+            {
+              name:"Google Play Game services",
+              gradle:"com.google.android.gms:play-services-games:9.4.0"
+            },
+            {
+              name:"SafetyNet",
+              gradle:"com.google.android.gms:play-services-safetynet:9.4.0"
+            },
+            {
+              name:"Android Pay",
+              gradle:"com.google.android.gms:play-services-wallet:9.4.0"
+            },
+            {
+              name:"Android Wear",
+              gradle:"com.google.android.gms:play-services-wearable:9.4.0"
+            }
+          ]
+        }
+      ]
+    },  
+    {
+      name: "Support Librareis",
+      list: [
+        {
+          name: "Multidex Support Library",
+          desc: "This library provides support for building apps with multiple Dalvik Executable (DEX) files. Apps that reference more than 65536 methods are required to use multidex configurations",
+          gradle: "com.android.support:multidex:1.0.0'"
+        },
+        {
+          name: "v4",
+          list2:[
+            {
+              name:"compat library",
+              desc:"Provides compatibility wrappers for a number of framework APIs",
+              gradle:"com.android.support:support-compat:24.2.0"
+            },
+            {
+              name:"core-utils library",
+              desc:"Provides a number of utility classes",
+              gradle:"com.android.support:support-core-utils:24.2.0"
+            },
+            {
+              name:"core-ui library",
+              desc:"Implements a variety of UI-related components",
+              gradle:"com.android.support:support-core-ui:24.2.0"
+            },
+            {
+              name:"media-compat library",
+              desc:"Backports portions of the media framework, including MediaBrowser and MediaSession",
+              gradle:"com.android.support:support-media-compat:24.2.0"
+            },
+            {
+              name:"fragment library",
+              desc:"Adds support for encapsulation of user interface and functionality with fragments, enabling applications to provide layouts that adjust between small and large-screen devices. This module has dependencies on compat, core-utils, core-ui, and media-compat.",
+              gradle:"com.android.support:support-fragment:24.2.0"
+            }
+          ]
+        },
+        {
+          name: "v7",
+          list2:[
+            {
+              name:"appcompat library",
+              desc:"This library adds support for the Action Bar user interface design pattern. This library includes support for material design user interface implementations.",
+              gradle:"com.android.support:appcompat-v7:24.2.0"
+            },
+            {
+              name:"cardview library",
+              desc:"This library adds support for the CardView widget, which lets you show information inside cards that have a consistent look on any app. These cards are useful for material design implementations, and are used extensively in layouts for TV apps.",
+              gradle:"com.android.support:cardview-v7:24.2.0"
+            },
+            {
+              name:"gridlayout library",
+              desc:"After you download the Android Support Libraries, this library adds support for the GridLayout class, which allows you to arrange user interface elements using a grid of rectangular cells. For detailed information about the v7 gridlayout library APIs, see the android.support.v7.widget package in the API reference.",
+              gradle:"com.android.support:gridlayout-v7:24.2.0"
+            },
+            {
+              name:"mediarouter library",
+              desc:"This library provides MediaRouter, MediaRouteProvider, and related media classes that support Google Cast.",
+              gradle:"com.android.support:mediarouter-v7:24.2.0"
+            },
+            {
+              name:"palette library",
+              desc:"The v7 palette support library includes the Palette class, which lets you extract prominent colors from an image.",
+              gradle:"com.android.support:palette-v7:24.2.0"
+            },
+            {
+              name:"recyclerview library",
+              desc:"The recyclerview library adds the RecyclerView class. This class provides support for the RecyclerView widget, a view for efficiently displaying large data sets by providing a limited window of data items.",
+              gradle:"com.android.support:recyclerview-v7:24.2.0"
+            },
+            {
+              name:"Preference Support Library",
+              desc:"The preference package provides APIs to support adding preference objects, such as CheckBoxPreference and ListPreference, for users to modify UI settings.",
+              gradle:"com.android.support:preference-v7:24.2.0"
+            }
+          ]
+        },
+        {
+          name: "v13 Support Library",
+          desc: "This library is designed to be used for Android 3.2 (API level 13) and higher. It adds support for the Fragment user interface pattern with the (FragmentCompat) class and additional fragment support classes. For more information about fragments, see the Fragments developer guide. For detailed information about the v13 Support Library APIs, see the android.support.v13 package in the API reference.",
+          gradle: "com.android.support:support-v13:24.2.0'"
+        },
+        {
+          name: "v14 Preference Support Library",
+          desc: "The android.support.v14.preference package provides APIs to add support for preference interfaces such as PreferenceFragment.OnPreferenceStartFragmentCallback and PreferenceFragment.OnPreferenceStartScreenCallback, along with classes, such as MultiSelectListPreference and PreferenceFragment. For detailed information about the v14 Preference Support Library APIs, see the preference package in the API reference.",
+          gradle: "com.android.support:preference-v14:24.2.0'"
+        },
+        {
+          name:"v17",
+          list2:[
+            {
+              name:"Preference Support Library for TV",
+              desc:"The android.support.v17.preference package provides APIs for providing preference interfaces on TV devices, including support for the LeanbackListPreferenceDialogFragment.ViewHolder.OnItemClickListener interface and classes, such as BaseLeanbackPreferenceFragment and LeanbackPreferenceFragment. For detailed information about the v17 Preference Support Library APIs, see the preference package in the API reference.",
+              gradle:"com.android.support:preference-leanback-v17:24.2.0"
+            },
+            {
+              name:"Leanback Library",
+              desc:"The android.support.v17.leanback package provides APIs to support building user interfaces on TV devices. It provides a number of important widgets for TV apps",
+              gradle:"com.android.support:leanback-v17:24.2.0"
+            }
+          ]
+        },
+        {
+          name: "Annotations Support Library",
+          desc: "The Annotation package provides APIs to support adding annotation metadata to your apps.",
+          gradle: "com.android.support:support-annotations:24.2.0'"
+        },
+        {
+          name: "Design Support Library",
+          desc: "The Design package provides APIs to support adding material design components and patterns to your apps.",
+          gradle: "com.android.support:design:24.2.0'"
+        },
+        {
+          name: "Custom Tabs Support Library",
+          desc: "The Custom Tabs package provides APIs to support adding and managing custom tabs in your apps.",
+          gradle: "com.android.support:customtabs:24.2.0'"
+        },
+        {
+          name: "Percent Support Library",
+          desc: "The Percent package provides APIs to support adding and managing percentage based dimensions in your app.",
+          gradle: "com.android.support:percent:24.2.0'"
+        },
+        {
+          name: "App Recommendation Support Library for TV",
+          desc: "The App Recommendation package provides APIs to support adding content recommendations in your app running on TV devices.",
+          gradle: "com.android.support:recommendation:24.2.0'"
+        }
+      ]
     }
   ]
 
