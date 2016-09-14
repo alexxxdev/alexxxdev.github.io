@@ -691,7 +691,124 @@ var libs = [
           gradle: "com.android.support:recommendation:24.2.0'"
         }
       ]
-    }
+    },
+    {
+	name: "Graphics",
+	list: [
+		{
+			name: "MPAndroidChart",
+			github: "https://github.com/PhilJay/MPAndroidChart",
+			desc: "A powerful Android chart view / graph view library, supporting line- bar- pie- radar- bubble- and candlestick charts as well as scaling, dragging and animations.",
+			gradle: "allprojects {\n\trepositories {\n\t\tmaven { url "https://jitpack.io" }\n\t}\n}\n\ndependencies {\n\tcompile 'com.github.PhilJay:MPAndroidChart:v3.0.0-beta1'\n}",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0"
+		},
+		{
+			name: "Materialdrawer",
+			url: "http://mikepenz.github.io/MaterialDrawer/",
+			github: "https://github.com/mikepenz/MaterialDrawer",
+			desc: "The flexible, easy to use, all in one drawer library for your Android project",
+			gradle: "com.mikepenz:materialdrawer:5.6.0@aar",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0",
+			bintray_latest_version: "https://bintray.com/bintray/jcenter/com.mikepenz:materialdrawer/_latestVersion",
+			bintray_img_version: "https://api.bintray.com/packages/bintray/jcenter/com.mikepenz:materialdrawer/images/download.svg"
+		},
+		{
+			name: "AndroidSlidingUpPanel",
+			github: "https://github.com/umano/AndroidSlidingUpPanel",
+			desc: "This library provides a simple way to add a draggable sliding up panel (popularized by Google Music and Google Maps) to your Android application",
+			gradle: "com.sothree.slidinguppanel:library:<version>",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0",
+			bintray_latest_version: "https://bintray.com/bintray/jcenter/com.sothree.slidinguppanel:library/_latestVersion",
+			bintray_img_version: "https://api.bintray.com/packages/bintray/jcenter/com.sothree.slidinguppanel:library/images/download.svg"
+		},
+		{
+			name: "FlexboxLayout",
+			github: "https://github.com/google/flexbox-layout",
+			desc: "Flexbox for Android",
+			gradle: "com.google.android:flexbox:<version>",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0",
+			bintray_latest_version: "https://bintray.com/google/flexbox-layout/flexbox/_latestVersion",
+			bintray_img_version: "https://api.bintray.com/packages/google/flexbox-layout/flexbox/images/download.svg"
+		},
+		{
+			name: "AppIntro",
+			github: "https://github.com/PaoloRotolo/AppIntro",
+			desc: "Make a cool intro for your Android app.",
+			gradle: "com.github.paolorotolo:appintro:4.0.0",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0",
+			bintray_latest_version: "https://bintray.com/rotolopao/maven/com.github.paolorotolo:appintro/_latestVersion",
+			bintray_img_version: "https://api.bintray.com/packages/rotolopao/maven/com.github.paolorotolo:appintro/images/download.svg"
+		}
+	]
+},
+{
+	name: "Dialogs",
+	list: [
+		{
+			name: "material-dialogs",
+			github: "https://github.com/afollestad/material-dialogs",
+			desc: "A beautiful, fluid, and customizable dialogs API",
+			gradle: "com.afollestad.material-dialogs:core:<version>\ncompile 'com.afollestad.material-dialogs:commons:<version>",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0",
+			bintray_latest_version: "https://bintray.com/drummer-aidan/maven/material-dialogs:core/_latestVersion",
+			bintray_img_version: "https://api.bintray.com/packages/drummer-aidan/maven/material-dialogs:core/images/download.svg"
+		}
+	]
+},
+{
+	name: "Tools",
+	list: [
+		{
+			name: "leakcanary",
+			github: "https://github.com/square/leakcanary",
+			desc: "A memory leak detection library for Android and Java.",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0",
+			gradle: "com.squareup.leakcanary:leakcanary-android:1.4"
+		}
+	]
+},
+{
+	name: "Interesting projects",
+	list: [
+		{
+			name: "Material design icons",
+			url: "http://google.github.io/material-design-icons/",
+			github: "https://github.com/google/material-design-icons",
+			desc: "Material design icons are the official icon set from Google that are designed under the material design guidelines.",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0"
+		},
+		{
+			name: "iosched",
+			url: "https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched",
+			github: "https://github.com/google/iosched",
+			desc: "The Google I/O Android App",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0"
+		},
+		{
+			name: "UniversalMusicPlayer",
+			github: "https://github.com/googlesamples/android-UniversalMusicPlayer",
+			desc: "This sample shows how to implement an audio media app that works across multiple form factors and provide a consistent user experience on Android phones, tablets, Auto, Wear and Cast devices",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0"
+		},
+		{
+			name: "Telegram",
+			github: "https://github.com/DrKLO/Telegram",
+			desc: "Telegram for Android source",
+			license: "Apache License V2",
+			license_url: "https://www.apache.org/licenses/LICENSE-2.0"
+		}
+	]
+}
   ]
 
 
