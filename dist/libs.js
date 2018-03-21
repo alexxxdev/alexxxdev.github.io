@@ -850,6 +850,16 @@ var libs = [
         gradle: "repositories {\n\t\tjcenter()\n\t}\ndependencies {\n\t// For Gradle Version below 3.0.0\n\tandroidTestCompile 'com.agoda.kakao:kakao:<version>'\n\t// For Gradle Version 3.0.0 or above\n\tandroidTestImplementation 'com.agoda.kakao:kakao:<version>'\n}",
         bintray_latest_version: "https://bintray.com/agoda/maven/kakao/_latestVersion",
         bintray_img_version: "https://api.bintray.com/packages/agoda/maven/kakao/images/download.svg"
+      },
+      {
+        name: "Spek",
+        url: "http://spekframework.org/",
+        github: "https://github.com/spekframework/spek",
+        desc: "A specification framework for Kotlin",
+        license: "BSD License",
+        license_url: "https://github.com/spekframework/spek/blob/2.x/LICENSE.TXT",
+        bintray_latest_version: "https://bintray.com/jetbrains/spek/spek/_latestVersion",
+        bintray_img_version: "https://api.bintray.com/packages/jetbrains/spek/spek/images/download.svg"
       }
     ]
   },
