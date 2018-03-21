@@ -827,6 +827,33 @@ var libs = [
     ]
   },
   {
+    name: "Testing",
+    list: [
+      {
+        name: "MockK",
+        url: "http://mockk.io/",
+        github: "https://github.com/oleksiyp/mockk",
+        desc: "mocking library for Kotlin",
+        usage: "https://github.com/oleksiyp/mockk",
+        license: "Apache License V2",
+        license_url: "https://www.apache.org/licenses/LICENSE-2.0",
+        gradle: "testCompile 'io.mockk:mockk:1.7.13'",
+        bintray_latest_version: "http://search.maven.org/#search%7Cga%7C1%7Cmockk",
+        bintray_img_version: "https://img.shields.io/maven-central/v/io.mockk/mockk.svg?label=release"
+      },
+      {
+        name: "Kakao",
+        github: "https://github.com/agoda-com/Kakao",
+        desc: "Nice and simple DSL for Espresso in Kotlin",
+        license: "Apache License V2",
+        license_url: "https://www.apache.org/licenses/LICENSE-2.0",
+        gradle: "repositories {\n\t\tjcenter()\n\t}\ndependencies {\n\t// For Gradle Version below 3.0.0\n\tandroidTestCompile 'com.agoda.kakao:kakao:<version>'\n\t// For Gradle Version 3.0.0 or above\n\tandroidTestImplementation 'com.agoda.kakao:kakao:<version>'\n}",
+        bintray_latest_version: "https://bintray.com/agoda/maven/kakao/_latestVersion",
+        bintray_img_version: "https://api.bintray.com/packages/agoda/maven/kakao/images/download.svg"
+      }
+    ]
+  },
+  {
     name: "Interesting projects",
     list: [
       {
