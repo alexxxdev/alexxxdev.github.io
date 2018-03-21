@@ -449,99 +449,91 @@ var libs = [
     list: [
       {
         usage: "https://developers.google.com/android/guides/setup",
-        gradle: "apply plugin: 'com.android.application'\n\t...\n\n\tdependencies {\n\t\tcompile 'com.google.android.gms:play-services:9.4.0'\n\t}\n\n",
+        gradle: "apply plugin: 'com.android.application'\n\t...\n\n\tdependencies {\n\t\timplementation 'com.google.android.gms:play-services:<version>'\n\t}\n\n",
         list: [
           {
             name: "Google+",
-            gradle: "com.google.android.gms:play-services-plus:9.4.0"
+            gradle: "com.google.android.gms:play-services-plus:<version>"
           },
           {
             name: "Google Account Login",
-            gradle: "com.google.android.gms:play-services-auth:9.4.0"
+            gradle: "com.google.android.gms:play-services-auth:<version>"
           },
           {
             name: "Google Actions, Base Client Library",
-            gradle: "com.google.android.gms:play-services-base:9.4.0"
+            gradle: "com.google.android.gms:play-services-base:<version>"
           },
           {
-            name: "Google Address API",
-            gradle: "com.google.android.gms:play-services-identity:9.4.0"
-          },
-          {
-            name: "Google App Indexing",
-            gradle: "com.google.android.gms:play-services-appindexing:9.4.0"
-          },
-          {
-            name: "Google App Invites",
-            gradle: "com.google.android.gms:play-services-appinvite:9.4.0"
+            name: "Google Sign In",
+            gradle: "com.google.android.gms:play-services-identity:<version>"
           },
           {
             name: "Google Analytics",
-            gradle: "com.google.android.gms:play-services-analytics:9.4.0"
+            gradle: "com.google.android.gms:play-services-analytics:<version>"
           },
           {
             name: "Google Awareness",
-            gradle: "com.google.android.gms:play-services-contextmanager:9.4.0"
+            gradle: "com.google.android.gms:play-services-contextmanager:<version>"
           },
           {
             name: "Google Cast",
-            gradle: "com.google.android.gms:play-services-cast:9.4.0"
+            gradle: "com.google.android.gms:play-services-cast:<version>"
           },
           {
             name: "Google Cloud Messaging",
-            gradle: "com.google.android.gms:play-services-gcm:9.4.0"
+            gradle: "com.google.android.gms:play-services-gcm:<version>"
           },
           {
             name: "Google Drive",
-            gradle: "com.google.android.gms:play-services-drive:9.4.0"
+            gradle: "com.google.android.gms:play-services-drive:<version>"
           },
           {
             name: "Google Fit",
-            gradle: "com.google.android.gms:play-services-fitness:9.4.0"
+            gradle: "com.google.android.gms:play-services-fitness:<version>"
           },
           {
             name: "Google Location and Activity Recognition",
-            gradle: "com.google.android.gms:play-services-location:9.4.0"
+            gradle: "com.google.android.gms:play-services-location:<version>"
           },
           {
             name: "Google Maps",
-            gradle: "com.google.android.gms:play-services-maps:9.4.0"
+            gradle: "com.google.android.gms:play-services-maps:<version>"
           },
           {
             name: "Google Mobile Ads",
-            gradle: "com.google.android.gms:play-services-ads:9.4.0"
+            gradle: "com.google.android.gms:play-services-ads:<version>"
           },
           {
             name: "Google Places",
-            gradle: "com.google.android.gms:play-services-places:9.4.0"
+            gradle: "com.google.android.gms:play-services-places:<version>"
           },
           {
             name: "Mobile Vision",
-            gradle: "com.google.android.gms:play-services-vision:9.4.0"
+            gradle: "com.google.android.gms:play-services-vision:<version>"
           },
           {
             name: "Google Nearby",
-            gradle: "com.google.android.gms:play-services-nearby:9.4.0"
+            gradle: "com.google.android.gms:play-services-nearby:<version>"
           },
           {
             name: "Google Panorama Viewer",
-            gradle: "com.google.android.gms:play-services-panorama:9.4.0"
+            gradle: "com.google.android.gms:play-services-panorama:<version>"
           },
           {
             name: "Google Play Game services",
-            gradle: "com.google.android.gms:play-services-games:9.4.0"
+            gradle: "com.google.android.gms:play-services-games:<version>"
           },
           {
             name: "SafetyNet",
-            gradle: "com.google.android.gms:play-services-safetynet:9.4.0"
+            gradle: "com.google.android.gms:play-services-safetynet:<version>"
           },
           {
             name: "Android Pay",
-            gradle: "com.google.android.gms:play-services-wallet:9.4.0"
+            gradle: "com.google.android.gms:play-services-wallet:<version>"
           },
           {
             name: "Android Wear",
-            gradle: "com.google.android.gms:play-services-wearable:9.4.0"
+            gradle: "com.google.android.gms:play-services-wearable:<version>"
           }
         ]
       }
