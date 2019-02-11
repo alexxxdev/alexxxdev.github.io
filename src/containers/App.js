@@ -31,9 +31,8 @@ export default class App extends Component {
           <p className="contact"><span className="icon-social-telegram"/> <a href="https://telegram.me/alexxxdev" className="contact">alexxxdev</a></p>
           <p className="contact"><span className="font-icon-social-skype"/> <a href="skype:alexxxdev" className="contact">alexxxdev</a></p>
           <p className="contact"><span className="font-icon-social-linkedin"/> <a href="https://www.linkedin.com/in/alexxxdev" className="contact">alexxxdev</a></p>
-      
+        </div>
       <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="ru_RU" data-type="horizontal" data-theme="dark" data-vanity="alexxxdev"><a class="LI-simple-link" href='https://ru.linkedin.com/in/alexxxdev?trk=profile-badge'>Алексей Дерендяев</a></div>
-          </div>
       </div>
     )
   }
